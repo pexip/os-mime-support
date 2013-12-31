@@ -1,3 +1,9 @@
+mime-support (3.51-1ubuntu1pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 31 Dec 2013 00:13:22 +0000
+
 mime-support (3.51-1ubuntu1) natty; urgency=low
 
   * Merge from debian unstable (LP: #675225), remaining changes:

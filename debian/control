@@ -2,9 +2,11 @@ Source: mime-support
 Build-Depends: debhelper
 Section: net
 Priority: standard
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 XSBC-Original-Maintainer: Brian White <bcwhite@pobox.com>
 Standards-Version: 3.1.1.1
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: mime-support
 Architecture: all
