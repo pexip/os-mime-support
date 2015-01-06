@@ -1,3 +1,11 @@
+mime-support (3.51-1ubuntu1.1) precise-security; urgency=medium
+
+  * SECURITY UPDATE: shell command injection in run-mailcap
+    - Thanks to Salvatore Bonaccorso and Charles Plessy for the patch.
+    - CVE-2014-7209
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 06 Jan 2015 14:15:53 -0500
+
 mime-support (3.51-1ubuntu1) natty; urgency=low
 
   * Merge from debian unstable (LP: #675225), remaining changes:
