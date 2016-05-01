@@ -38,10 +38,10 @@ determined from the file's extensions.  Currently supported encodings
 are
 .B gzip
 (.gz),
-.B bzip
-(.bz),
 .B bzip2
-(.bz2), and
+(.bz2),
+.B xz
+(.xz), and
 .B compress
 (.Z).  A filename of "-" can be used to mean "standard input", but
 then a mime-type
@@ -79,8 +79,17 @@ Ignores any "copiousoutput" directive and sends output to STDOUT.
 .TP
 .BI \-\-norun
 Displays the found command without actually executing it.
+.SH SECURITY
+A temporary copy of the file is opened if the file name matches the Perl
+regular expresssion "[^[:alnum:],.:/@%^+=_-]", in order to protect from the
+injection of shell commands, and to make sure that the name can always be
+displayed in the current locale.  In addition, the file is opened using its
+absolute path to prevent the injection of command-line arguments, for instance
+using file names starting with dashes.
 .SH "SEE ALSO"
 .BR file "(1)"
+.BR mailcap "(5)"
+.BR mailcap.order "(5)"
 .BR update-mime "(8)"
 .SH AUTHOR
 .B run-mailcap

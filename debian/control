@@ -4,14 +4,14 @@ Uploaders: Laszlo Boszormenyi (GCS) <gcs@debian.hu>,
            Charles Plessy <plessy@debian.org>
 Section: net
 Priority: standard
-Standards-Version: 3.9.6
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/mime-support.git
-Vcs-Git: git://anonscm.debian.org/collab-maint/mime-support.git
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/mime-support.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/mime-support.git
 
 Package: mime-support
 Architecture: all
 Multi-Arch: foreign
-Recommends: file
+Recommends: bzip2, file, xz-utils
 Description: MIME files 'mime.types' & 'mailcap', and support programs
  As these files can be used by all MIME compliant programs, they
  have been moved into their own package that others can depend upon.

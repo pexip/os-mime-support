@@ -18,9 +18,15 @@ installation or removal.
 
 .SS OPTIONS
 .BI \-\-local
-Generate files in the current user's home directory instead of /etc.
-This allows users to create a custom ordering configuration and get
-a complete ~/.mailcap file out of it.
+Generate files in the current user's home directory instead of the
+.I /etc
+directory.  This allows users to create a custom ordering configuration and get
+a complete
+.I ~/.mailcap
+file out of it.  In this local mode, the order overriding file (see below)
+will be looked for in the
+.I ~/.mailcap.order
+file.
 
 .SH OVERRIDING ORDER
 The order of entries in the

@@ -6,6 +6,7 @@
 
 package	:= mime-support
 
+export SOURCE_DATE_EPOCH = $(shell date -d "$$(dpkg-parsechangelog --count 1 -SDate)" +%s)
 
 default:
 	@echo "Build 'binary' or 'clean'?"
@@ -53,8 +54,8 @@ binary-indep:
 	install -m 755 debian/prerm		debian/tmp/DEBIAN/prerm
 	install -m 644 debian/conffiles		debian/tmp/DEBIAN/conffiles
 	install -m 644 debian/triggers		debian/tmp/DEBIAN/triggers
-	cd debian/tmp/usr/share/man; gzip -9fv */*
-	cd debian/tmp/usr/share/doc/$(package); gzip -9v *
+	cd debian/tmp/usr/share/man; gzip --best --force --no-name --verbose */*
+	cd debian/tmp/usr/share/doc/$(package); gzip --best --no-name --verbose *
 	cd debian/tmp/usr/share/doc/$(package); gunzip copyright.gz
 	cd debian/tmp/usr/bin; ln -s run-mailcap see
 	cd debian/tmp/usr/bin; ln -s run-mailcap edit
@@ -68,9 +69,11 @@ binary-indep:
 	(cd debian/tmp >/dev/null ; find . -type f ! -path "./etc/mime.types" ! -path "./etc/mailcap.order"  ! -regex './DEBIAN/.*' -printf '%P\0' | LC_ALL=C sort -z | xargs -r0 md5sum > DEBIAN/md5sums) >/dev/null
 	chmod 644 debian/tmp/DEBIAN/md5sums
 	chown 0:0 debian/tmp/DEBIAN/md5sums
-	dpkg-gencontrol -is -ip
+	dpkg-gencontrol
 	chown -R root.root debian/tmp
 	chmod -R go=rX     debian/tmp
+	find debian/tmp -newermt "@$$SOURCE_DATE_EPOCH" -print0 | \
+		xargs -0r touch --no-dereference --date="@$$SOURCE_DATE_EPOCH"
 	dpkg --build debian/tmp
 	dpkg-name -o -s .. debian/tmp.deb
 

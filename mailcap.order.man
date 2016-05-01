@@ -88,6 +88,10 @@ rule comes
 the emacs
 .I edit
 rule.
+.SH "SEE ALSO"
+.BR mailcap "(5)"
+.BR run-mailcap "(1)"
+.BR update-mime "(8)"
 .SH AUTHOR
 The
 .B mailcap.order
