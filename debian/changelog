@@ -1,3 +1,9 @@
+mime-support (3.60pexip1) pexip; urgency=medium
+
+  * Migrate to Stretch
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 10 Jul 2018 11:30:00 +0000
+
 mime-support (3.60) unstable; urgency=medium
 
   5f9811a Add decoding and encoding support for xz.
