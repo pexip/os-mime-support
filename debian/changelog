@@ -1,3 +1,37 @@
+mime-support (3.60) unstable; urgency=medium
+
+  5f9811a Add decoding and encoding support for xz.
+          Thanks to Nicolas Schier <nicolas@hjem.rpa.no> (Closes: #804211)
+  67c43e3 Removed bzip support.
+  13cbcc7 Recommend bzip2 and xz-utils, since run-mailcap uses them.
+  d2b5636 Escape a left curly bracket with a backslash.
+          (Warning since Perl 5.22, Closes: #810587)
+  fe8d90a Added text/markdown. (Closes: #802753)
+  bcf08d8 Conforms to Policy version 3.9.8.
+  3b341bf Use secure URIs in the VCS fields.
+
+ -- Charles Plessy <plessy@debian.org>  Sun, 01 May 2016 20:20:22 +0900
+
+mime-support (3.59) unstable; urgency=medium
+
+  * Media types
+  bdfd714 Add media types and extensions to support ClickOnce apps.
+
+  * Documentation
+  77732bb Document how attacks with specially crafted file names are
+          prevented. Closes: #774303
+  4cd9ea4 Mention ~/.mailcap.order and better link between manpages.
+          Closes: #787459
+
+  * Packaging
+  8a8992d Remove obsolete arguments of dpkg-gencontrol.
+  a65e461 Pass --no-name to gzip, to make the build more reproducible.
+          Closes: #776939.
+  db49144 Make the mtimes reproducible.  Closes: #793705
+          Thanks to Maria Valentina Marin <marivalenm@gmail.com>
+
+ -- Charles Plessy <plessy@debian.org>  Mon, 03 Aug 2015 07:57:49 +0900
+
 mime-support (3.58pexip1) pexip; urgency=low
 
   * Migrate to Jessie
