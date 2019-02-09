@@ -6,8 +6,6 @@
 
 package	:= mime-support
 
-export SOURCE_DATE_EPOCH = $(shell date -d "$$(dpkg-parsechangelog --count 1 -SDate)" +%s)
-
 default:
 	@echo "Build 'binary' or 'clean'?"
 	@echo " "

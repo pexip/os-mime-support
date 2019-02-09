@@ -81,7 +81,7 @@ Ignores any "copiousoutput" directive and sends output to STDOUT.
 Displays the found command without actually executing it.
 .SH SECURITY
 A temporary copy of the file is opened if the file name matches the Perl
-regular expresssion "[^[:alnum:],.:/@%^+=_-]", in order to protect from the
+regular expression "[^[:alnum:],.:/@%^+=_-]", in order to protect from the
 injection of shell commands, and to make sure that the name can always be
 displayed in the current locale.  In addition, the file is opened using its
 absolute path to prevent the injection of command-line arguments, for instance

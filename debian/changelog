@@ -1,3 +1,46 @@
+mime-support (3.62) unstable; urgency=medium
+
+  * Added media types
+
+  2f7cd89 application/wasm              Closes: #908832
+
+  * Packaging
+
+  [ Ondřej Nový ]
+  d48da1b d/control: Fix wrong Vcs-*
+
+  [ Charles Plessy ]
+  426f2c8 Continuous integration on Salsa
+  638d524 Conforms to Policy version 4.3.0.
+
+ -- Charles Plessy <plessy@debian.org>  Sat, 09 Feb 2019 21:32:33 +0900
+
+mime-support (3.61) unstable; urgency=medium
+
+  * Added media types
+
+  2977585 fonts/*                       Closes: #900288, LP: #1380129
+  ad05776 application/epub+zip          Closes: #712054
+
+  * Packaging
+
+  1909440 Remove Laszlo from the uploaders.
+  34beb90 New canonical URLs and standards-version.
+  5f46ab2 debian/postinst: remove removal of 'see'.
+  10a132d Use tracker.debian.org for the Maintainer field.
+
+  * Fixed many issued found by Lintian.
+
+  bb05b29 Lintian: file-contains-trailing-whitespace
+  1a2e972 Lintian: unnecessary-source-date-epoch-assignment
+  7e17789 Lintian: spelling-error-in-manpage
+  bfa7589 Lintian: insecure-copyright-format-uri
+  aab7e48 Lintian: command-with-path-in-maintainer-script
+  d858f9b Lintian: maintainer-script-ignores-errors
+  22b3f61 Lintian: maintainer-script-without-set-e
+
+ -- Charles Plessy <plessy@debian.org>  Sat, 16 Jun 2018 17:55:26 +0900
+
 mime-support (3.60) unstable; urgency=medium
 
   5f9811a Add decoding and encoding support for xz.
@@ -313,7 +356,7 @@ mime-support (3.40-1) unstable; urgency=medium
 
 mime-support (3.39-1) unstable; urgency=medium
 
-  * added new mime.types 
+  * added new mime.types
 
  -- Brian White <bcwhite@pobox.com>  Mon,  4 Dec 2006 22:22:38 -0500
 
@@ -604,7 +647,7 @@ mime-support (3.7-1) unstable; urgency=low
 
   * fixed problem with run-mailcap extracting tests from mailcap (Bug#39877)
   * added support for bzip/bzip2 (Bug#42022)
-  
+
  -- Brian White <bcwhite@pobox.com>  Fri, 27 Aug 1999 14:27:44 -0400
 
 
