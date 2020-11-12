@@ -1,26 +1,19 @@
 Source: mime-support
 Maintainer: Mime-Support Packagers <team+debian-mimesupport-packagers@tracker.debian.org>
 Uploaders: Charles Plessy <plessy@debian.org>
-Section: net
-Priority: standard
-Standards-Version: 4.3.0
+Section: oldlibs
+Priority: optional
+Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 13)
+Rules-Requires-Root: no
 Vcs-Browser: https://salsa.debian.org/debian/mime-support
 Vcs-Git: https://salsa.debian.org/debian/mime-support.git
 
 Package: mime-support
 Architecture: all
 Multi-Arch: foreign
-Recommends: bzip2,
-            file,
-            xz-utils
-Description: MIME files 'mime.types' & 'mailcap', and support programs
- As these files can be used by all MIME compliant programs, they
- have been moved into their own package that others can depend upon.
- .
- Other packages add themselves as viewers/editors/composers/etc by
- using the provided "update-mime" program.
- .
- In addition, the commands "see", "edit", "compose", and "print"
- will display, alter, create, and print (respectively) any file using
- a program determined from the entries in the mime.types and mailcap
- files.
+Depends: mailcap, media-types, ${misc:Depends}
+Description: transitional package
+ This is a transitional package. It will be possible to remove it
+ safely once its dependency chain has adjusted to depend on mailcap
+ or media-types directly.
