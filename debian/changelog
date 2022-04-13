@@ -1,3 +1,9 @@
+mime-support (3.66pexip1) pexip; urgency=medium
+
+  * Bump version
+
+ -- Huw Jones <huw@pexip.com>  Wed, 13 Apr 2022 10:33:51 +0100
+
 mime-support (3.66) unstable; urgency=medium
 
   * Upload to unstable as no issue was reported.
