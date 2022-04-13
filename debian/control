@@ -14,7 +14,7 @@ XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
 Package: mime-support
 Architecture: all
 Multi-Arch: foreign
-Depends: mailcap, media-types, ${misc:Depends}
+Depends: media-types, ${misc:Depends}
 Description: transitional package
  This is a transitional package. It will be possible to remove it
  safely once its dependency chain has adjusted to depend on mailcap
