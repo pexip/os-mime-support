@@ -1,3 +1,47 @@
+mime-support (3.66) unstable; urgency=medium
+
+  * Upload to unstable as no issue was reported.
+
+ -- Charles Plessy <plessy@debian.org>  Fri, 13 Nov 2020 04:37:01 +0900
+
+mime-support (3.65) experimental; urgency=medium
+
+  * Split into two new packages: mailcap and media-types.
+
+ -- Charles Plessy <plessy@debian.org>  Thu, 08 Oct 2020 05:23:50 +0900
+
+mime-support (3.64) unstable; urgency=medium
+
+  [ Sven Joachim ]
+  fd4ca45 update-mime: avoid using uninitialized values (Closes: #939587)
+
+  [ Charles Plessy ]
+  f72871a run-mailcap: revert 694e239 (use strict etc.), because it was
+          incompatible with its argument parsing (Closes: #939226)
+  55f3742 Switch to 3.0 (native) to ease the use of git debpush.
+
+ -- Charles Plessy <plessy@debian.org>  Sun, 06 Oct 2019 22:11:08 +0900
+
+mime-support (3.63) unstable; urgency=medium
+
+  * Media types
+  
+  7909e87 Add mjs suffix to application/javascript (Closes: #927300)
+  ac860b6 Add application/ls+json            (Thanks: Nicolas Fella)
+
+  * run-mailcap
+
+  [ Elliott Mitchell ]
+  694e239 use strict; use warnings (Closes: #803729)
+  c7b7de6 Return !0 when launched program does not exist (Closes: #783195)
+
+  * update-mime
+
+  [ Alex Riesen ]
+  21035f8 update-mime: softly reject empty media types (Closes: #931300)
+
+ -- Charles Plessy <plessy@debian.org>  Sun, 11 Aug 2019 08:53:20 +0900
+
 mime-support (3.62pexip2) pexip; urgency=medium
 
   * Rebuild in buster environment
