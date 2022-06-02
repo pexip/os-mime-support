@@ -1,3 +1,9 @@
+mime-support (3.66pexip3) pexip; urgency=medium
+
+  * Initial bullseye build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 02 Jun 2022 14:42:35 +0100
+
 mime-support (3.66pexip2) pexip; urgency=medium
 
   * Don't dep on mailcap
