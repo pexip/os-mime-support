@@ -1,3 +1,9 @@
+mime-support (3.66pexip6) pexip; urgency=medium
+
+  * Nuke old mime-support files.
+
+ -- Huw Jones <huw@pexip.com>  Mon, 14 Nov 2022 16:32:49 +0000
+
 mime-support (3.66pexip5) pexip-bullseye; urgency=medium
 
   * Bullseye rebuild for ARM64 inclusion

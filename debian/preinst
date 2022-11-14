@@ -1,0 +1,13 @@
+#! /bin/sh
+#
+# preinst file for mime-support
+
+set -e
+
+if [ "$1" = "upgrade" ]; then
+    rm -f /etc/mailcap
+    rm -f /usr/share/mime/generic-icons
+    rm -f /usr/share/mime/globs
+    rm -f /usr/share/mime/globs2
+    rm -f /usr/share/mime/subclasses
+fi
