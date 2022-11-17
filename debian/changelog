@@ -1,3 +1,9 @@
+mime-support (3.66pexip7) pexip; urgency=medium
+
+  * Fixup nuking of old mime-support files.
+
+ -- Huw Jones <huw@pexip.com>  Thu, 17 Nov 2022 11:02:19 +0000
+
 mime-support (3.66pexip6) pexip; urgency=medium
 
   * Nuke old mime-support files.
