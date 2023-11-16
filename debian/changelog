@@ -1,3 +1,9 @@
+mime-support (3.66pexip8) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 10:12:27 +0000
+
 mime-support (3.66pexip7) pexip; urgency=medium
 
   * Fixup nuking of old mime-support files.
