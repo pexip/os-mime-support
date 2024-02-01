@@ -1,3 +1,9 @@
+mime-support (3.66+pexip24u10) pexip-bookworm; urgency=medium
+
+  * New versioning scheme
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 01 Feb 2024 16:12:23 +0000
+
 mime-support (3.66pexip9) pexip-bookworm; urgency=medium
 
   * Bookworm build for product distribution
